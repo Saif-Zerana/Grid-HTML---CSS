@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #ecf2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+article {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+}
+
+img {
+  border-radius: 40px;
+  margin-right: 30px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-subtitle {
+  color: rgb(236, 242, 248, 0.5);
+  font-size: 13px;
+}
+
+p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.review-pragraph{
+    font-size: 13px;
+    color: hsl(0, 0%, 81%,0.7)
+}
+
+.card-daniel {
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  grid-column: span 2;
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position:400px 30px  ;
+}
+
+.card-jonathan{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.card-jeanette{
+    background-color: hsl(0, 0%, 100%);
+    color: #48556a;
+}
+
+.card-patrick{
+    background-color:  hsl(217, 30%, 14%);
+    color: white;
+    grid-column: span 2;
+}
+
+.card-kira{
+    background-color: hsl(0, 0%, 100%);
+    color: #48556a;
+    grid-column: 4/5;
+    grid-row: 1/span 2;
+}
+
